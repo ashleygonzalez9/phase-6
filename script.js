@@ -2,14 +2,9 @@
 // https://www.w3schools.com/jsref/met_document_getelementbyid.asp
 	
 // "el" stands for the "element" that was just clicked
-function allOpaque(el){
-	el.classList.add("opaque");
-	document.getElementById("rams-picture").classList.remove("rams-opaque");
-	document.getElementById("pats-picture").classList.remove("pats-opaque");
-	
-	
-}
-
+a = document.getElementById("first");
+b = document.getElementById("second");
+c = document.getElementById("third");
 
 function nextImage(el){
 	if ( el.src.match("image/whitecolor.PNG")){
@@ -60,5 +55,19 @@ function nextImage2(el){
 	}
 }
  
+ 
+ function checkImages(el){
+	if (a.src.match("image/pinkcolor.PNG") && b.src.match("image/bluecolor.PNG") && c.src.match("image/redcolor.PNG")){
+		mySound.play();
+		console.log("Correct!");
+	
+		a.classList.add("opaque");
+		b.classList.add("opaque");
+		c.classList.add("opaque");
+
+	} else{
+		
+	}
+}
  
 

@@ -16,8 +16,9 @@ body {
 .colorbox { 
 	background-color:#ffffff;
 	height:16%;
-	width:75%;
+	width:calc(100%/3);
 	display:flex;
+	
 	
 } 
 .thirdbox{
@@ -27,19 +28,19 @@ body {
 
 .firstcolor{ 
 	height:100%;
-	width: calc(100%/3);
+	width: 100%;
 	
 } 
 
 .secondcolor{ 
 	height:100%;
-	width: calc(100%/3);
+	width: 100%;
 }
 
 
 .thirdcolor{ 
 	height:100%;
-	width: calc(100%/3);
+	width: 100%;
 } 
 .purple {
 	background-color: #dab4ed;
